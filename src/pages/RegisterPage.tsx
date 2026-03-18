@@ -2,27 +2,27 @@ import React from "react";
 
 export default function RegisterPage() {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
+    <div className="min-h-screen flex items-center justify-center bg-slate-800">
       <div className="bg-white p-8 rounded-xl shadow w-full max-w-md">
-        <h1 className="text-2xl font-bold mb-6 text-center">Register</h1>
+        <h1 className="text-2xl font-bold mb-6 text-center text-slate-800">Register</h1>
 
         <form className="space-y-4">
           <input
             type="text"
             placeholder="Full Name"
-            className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 outline-none"
+            className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 outline-none text-black"
           />
 
           <input
             type="email"
             placeholder="Email"
-            className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 outline-none"
+            className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 outline-none text-black"
           />
 
           <input
             type="password"
             placeholder="Password"
-            className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 outline-none"
+            className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 outline-none text-black"
           />
 
           <button className="w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600">

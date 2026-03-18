@@ -70,7 +70,7 @@ export default function Post() {
   };
 
   return (
-    <div className="bg-gray-100 min-h-screen">
+    <div className="bg-slate-800 min-h-screen">
       <div className="max-w-5xl mx-auto p-6">
         <div className="bg-white rounded-xl shadow overflow-hidden">
 
