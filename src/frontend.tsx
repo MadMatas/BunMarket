@@ -9,11 +9,21 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { App } from "./App";
 // bun add react-router
-import { BrowserRouter, Routes, Route } from "react-router";
+import { BrowserRouter, Routes, Route, Outlet } from "react-router";
 import LoginPage from "./pages/LoginPage";
 import RegisterPage from "./pages/RegisterPage";
 import AddPost from "./pages/AddPost";
 import Post from "./pages/Post";
+import NavBar from "./components/NavBar";
+
+function AppLayout() {
+  return (
+    <>
+      <NavBar />
+      <Outlet />
+    </>
+  );
+}
 
 
 const elem = document.getElementById("root")!;
@@ -21,11 +31,13 @@ const app = (
   <StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<App />} />
-        <Route path="/login" element={<LoginPage />} />
-        <Route path="/register" element={<RegisterPage />} />
-        <Route path="/addpost" element={<AddPost />} />
-        <Route path="/post" element={<Post />} />
+        <Route element={<AppLayout />}>
+          <Route path="/" element={<App />} />
+          <Route path="/login" element={<LoginPage />} />
+          <Route path="/register" element={<RegisterPage />} />
+          <Route path="/addpost" element={<AddPost />} />
+          <Route path="/post" element={<Post />} />
+        </Route>
       </Routes>
     </BrowserRouter>
   </StrictMode>
