@@ -63,28 +63,7 @@ const categories = [
 export default function MainPage() {
   return (
     <div className="bg-gray-100 min-h-screen text-gray-800">
-      {/* Navbar */}
-      <header className="bg-white shadow sticky top-0 z-50">
-        <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
-          <h1 className="text-xl font-bold">Market</h1>
-
-          <input
-            type="text"
-            placeholder="Search items..."
-            className="w-1/2 px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-          />
-
-          <div className="flex items-center gap-4">
-            <button className="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600">
-              Post Item
-            </button>
-            <img
-              src="https://i.pravatar.cc/40"
-              className="w-10 h-10 rounded-full"
-            />
-          </div>
-        </div>
-      </header>
+    
 
       <div className="max-w-7xl mx-auto px-4 py-6 flex gap-6">
         {/* Sidebar */}
